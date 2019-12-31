@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'jackey-blog';
+  title = 'japeBlog';
+  menu = menuData;
 }
+
+class Menu {
+  path: string;
+  title: string;
+  icon: string;
+}
+
+const menuData = [
+  {
+    path: 'index',
+    title: '首页',
+    icon: 'icon icon-home',
+  },
+  {
+    path: 'frient',
+    title: '友链',
+    icon: 'icon icon-love',
+  },
+];
