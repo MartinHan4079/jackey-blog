@@ -30,7 +30,8 @@ export class IndexComponent implements OnInit {
   getContents() {
     this.japeCore.getContents().subscribe(list => {
       list.forEach(element => {
-        const [title, slug, time, lock, _] = element.name.split('.')[0];
+        const [title, slug, time, lock, _] = element.name.split('.')[0].split('-');
+        console.log(title, slug, time, lock, _);
         element.title = title;
         element.slug = slug;
         element.time = time;
