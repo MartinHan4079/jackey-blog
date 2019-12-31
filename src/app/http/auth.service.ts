@@ -4,7 +4,7 @@ const TOKEN_NEXT =  '449b8a47c20b58684b3b';
 const AUTH_TOKEN = TOKEN_PRV + TOKEN_NEXT;
 
 // const BASEURL = '';
-const BASEURL = 'https://api.github.com/repos/jackeybiao/japeBlog';
+const BASEURL = 'https://api.github.com/repos/jackeybiao/jackeyBlog';
 
 @Injectable({
   providedIn: 'root'
