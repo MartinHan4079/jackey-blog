@@ -1,8 +1,7 @@
 import marked from 'marked';
 import hljs from 'highlight.js/lib/highlight';
 import javascript from 'highlight.js/lib/languages/javascript';
-import xml from 'highlight.js/lib/languages/xml';
-import 'highlight.js/styles/monokai.css';
+hljs.registerLanguage('javascript', javascript);
 /**
  * markdown and highlight
  */
@@ -12,7 +11,6 @@ hljs.configure({
   classPrefix: 'hljs-'
 });
 hljs.registerLanguage('javascript', javascript);
-hljs.registerLanguage('xml', xml);
 marked.setOptions({
   renderer: new marked.Renderer(),
   highlight: code => hljs.highlightAuto(code).value,

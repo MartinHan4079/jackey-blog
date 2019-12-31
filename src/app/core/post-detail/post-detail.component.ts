@@ -11,7 +11,6 @@ import marked from '../../config/marked';
   styleUrls: ['./post-detail.component.sass']
 })
 export class PostDetailComponent implements OnInit {
-
   article: Article;
   label: Array<string>;
   locationUrl: string;
